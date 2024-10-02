@@ -1,0 +1,22 @@
+{
+  "name": "driver-roster-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/identity": "^4.4.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mssql": "^11.0.1",
+    "mysql2": "^3.11.3",
+    "twilio": "^5.3.2"
+  }
+}

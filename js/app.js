@@ -120,6 +120,7 @@ function reassignRowIds() {
         row.querySelector(`#wharfLocation${rowId}`).id = `wharfLocation${newId}`;
         row.querySelector(`#constructionSite${rowId}`).id = `constructionSite${newId}`;
         row.querySelector(`#driver${rowId}`).id = `driver${newId}`;
+        row.querySelector(`#notes${rowId}`).id = `driver${newId}`;
         row.querySelector('.confirm-btn').setAttribute('onclick', `confirmRow(${newId})`);
         
     });
@@ -188,6 +189,7 @@ function addRow(selectedDate = '') {
             </select>
         </td>
         <td><select id="driver${rowId}"></select></td>
+         <td><input type="text" id="notes${rowId}"></td>
         <td>
             <button class="confirm-btn" onclick="confirmRow(${rowId})">Confirm</button>
             
